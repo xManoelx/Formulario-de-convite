@@ -41,17 +41,18 @@
 
     /* FONTS */
         /* Leckerli One Font */
-        --font-family-Logo: "Leckerli One", sans-serif;
-        --Logo: 400 40px var(--font-famil-Logo);
+        --font-family-Logo: "Leckerli One", cursive;
+        --h1: 400 5rem var(--font-family-Logo);
 
         /* Baloo 2 Font */
         --font-family-Heading: "Baloo 2", sans-serif;
-        --hd-md: 600 28px var(--font-family-Heading);
-        --hd-sm: 600 18px var(--font-family-Heading);
+        --hd-md: 600 1.75rem var(--font-family-Heading);
+        --hd-sm: 600 1.125rem var(--font-family-Heading);
 
         /* Open Sans Font */
         --font-family-Body: "Open Sans", sans-serif;
-        --body-md: 500 16px var(--font-family-Body);
-        --body-sm: 500 14px var(--font-family-Body);
-        --body-xs: 500 12px var(--font-family-Body);
+        --body-md-aside: 400 1.5rem var(--font-family-Body);
+        --body-md: 500 1rem var(--font-family-Body);
+        --body-sm: 500 0.875rem var(--font-family-Body);
+        --body-xs: 500 0.75rem var(--font-family-Body);
 }
