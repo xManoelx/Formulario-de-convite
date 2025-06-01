@@ -1,0 +1,12 @@
+.about{
+    margin-top: 3rem;
+    
+    font: var(--hd-sm);
+    font-size: 1.75rem;
+    color: var(--text-heading);
+    
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
