@@ -89,3 +89,31 @@ input[type="date"]{
         opacity: 0;
     }
 }
+
+.personalize-event{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 3rem;
+
+    color: var(--text-heading);
+    font: var(--hd-sm);
+
+    gap: 1rem;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 2rem;
+
+    color: var(--text-heading);
+    font: var(--hd-sm);
+
+    gap: 1rem; 
+}
+
+.contact{
+    display: block;
+}
