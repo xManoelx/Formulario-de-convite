@@ -42,7 +42,7 @@
     /* FONTS */
         /* Leckerli One Font */
         --font-family-Logo: "Leckerli One", cursive;
-        --h1: 400 5rem var(--font-family-Logo);
+        --h1: 400 2.5rem var(--font-family-Logo);
 
         /* Baloo 2 Font */
         --font-family-Heading: "Baloo 2", sans-serif;
@@ -51,7 +51,6 @@
 
         /* Open Sans Font */
         --font-family-Body: "Open Sans", sans-serif;
-        --body-md-aside: 400 1.5rem var(--font-family-Body);
         --body-md: 500 1rem var(--font-family-Body);
         --body-sm: 500 0.875rem var(--font-family-Body);
         --body-xs: 500 0.75rem var(--font-family-Body);

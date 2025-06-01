@@ -29,7 +29,7 @@
             <div class="aside-container">
                 <header>
                     <img src="assests/ilustration/Logo.png" alt="emoji de aniversário">
-                    <h1 class="title">Festive</h1>
+                    <h1>Festive</h1>
                     <p>Crie um convite digital para o seu evento</p>
                 </header>
             </div>
@@ -42,6 +42,43 @@
                     <img src="assests/icons/Calendary/calendary.svg" alt="simobolo de calendario">
                     <span>Sobre o evento</span>
                 </div>
+
+                <form action="">
+                    <div class="about-event">
+                        <fieldset class="title">
+                            <label for="event-title">Título</label>
+                            <input type="text" id="event-title" name="event-title" placeholder="Nome do evento">
+                        </fieldset>
+
+                        <fieldset class="date">
+                            <label for="initial-date">Data Inicial</label>
+                            <input type="date" name="initial-date" id="initial-date">
+
+                            <label for="final-date">Data Final</label>
+                            <input type="date" name="final-date" id="final-date">
+                        </fieldset>
+
+                        <fieldset class="type-info">
+                            <label for="type-info">Tipo</label>
+                            <input type="checkbox" id="toggle" hidden>
+                            <label for="toggle" class="type">
+                                <img src="assests/icons/Segment-control/Segment-online.svg" alt="Evento online" class="imagem1">
+                                <img src="assests/icons/Segment-control/Segment-presencial.svg" alt="Evento presencial" class="imagem2">
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="local-info">
+                            <label for="local-info">Local</label>
+                            <input type="text" id="local-info" name="local-info" placeholder="Link ou endereço">
+                        </fieldset>
+
+                        <fieldset class="description">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>></textarea>
+                        </fieldset>
+                    </div>
+                </form>
+
 
             </div>
         </main>
