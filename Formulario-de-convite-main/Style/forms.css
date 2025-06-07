@@ -1,0 +1,10 @@
+@import url(/Style/fields/index.css);
+
+form{
+    margin-top: 1rem;
+}
+
+fieldset{
+    border: none;
+    display: grid;
+}

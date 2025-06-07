@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- LINKS -->
+    <link rel="stylesheet" href="/Style/index.css">
+
+        <!-- FONTS -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Formulário de convite</title>
+</head>
+
+<body>
+    <div id="app">
+        <aside>
+            <div class="aside-container">
+                <header>
+                    <img src="assests/ilustration/Logo.png" alt="emoji de aniversário">
+                    <h1>Festive</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </header>
+            </div>
+        </aside>
+        
+        <main>
+            <div class="main-container">
+                <h1>Crie seu convite</h1>
+                <div class="about">
+                    <img src="assests/icons/Calendary/calendary.svg" alt="simobolo de calendario">
+                    <span>Sobre o evento</span>
+                </div>
+
+                <form action="">
+                    <div class="about-event">
+                        <fieldset class="title">
+                            <label for="event-title">Título</label>
+                            <input type="text" id="event-title" name="event-title" placeholder="Nome do evento">
+                        </fieldset>
+
+                        <fieldset class="date">
+                            <label for="initial-date">Data Inicial</label>
+                            <input type="date" name="initial-date" id="initial-date">
+
+                            <label for="final-date">Data Final</label>
+                            <input type="date" name="final-date" id="final-date">
+                        </fieldset>
+
+                        <fieldset class="type-info">
+                            <label for="type-info">Tipo</label>
+                            <input type="checkbox" id="toggle" hidden>
+                            <label for="toggle" class="type">
+                                <img src="assests/icons/Segment-control/Segment-online.svg" alt="Evento online" class="imagem1">
+                                <img src="assests/icons/Segment-control/Segment-presencial.svg" alt="Evento presencial" class="imagem2">
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="local-info">
+                            <label for="local-info">Local</label>
+                            <input type="text" id="local-info" name="local-info" placeholder="Link ou endereço">
+                        </fieldset>
+
+                        <fieldset class="description">
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </fieldset>
+                    </div>
+
+                    <div class="personalize-event">
+                        <img src="assests/icons/Paintbrush/paintbrush.svg" alt="Icone de pincel">
+                        <span>Personalização</span>
+                    </div>
+
+                    <div class="personalize">
+                        <fieldset class="color">
+                            <label for="event-color">Cor principal</label>
+                            <div class="color-picker">
+                                <input type="radio" id="color-blue" name="event-color" value="#3B82F6" hidden>
+                                <label for="color-blue" class="color-option" style="background-color: #3B82F6;"></label>
+                                
+                                <input type="radio" id="color-purple" name="event-color" value="#8B5CF6" hidden>
+                                <label for="color-purple" class="color-option" style="background-color: #8B5CF6;"></label>
+                                
+                                <input type="radio" id="color-pink" name="event-color" value="#EC4899" hidden>
+                                <label for="color-pink" class="color-option" style="background-color: #EC4899;"></label>
+                                
+                                <input type="radio" id="color-red" name="event-color" value="#EF4444" hidden>
+                                <label for="color-red" class="color-option" style="background-color: #EF4444;"></label>
+                                
+                                <input type="radio" id="color-orange" name="event-color" value="#F97316" hidden>
+                                <label for="color-orange" class="color-option" style="background-color: #F97316;"></label>
+                                
+                                <input type="radio" id="color-yellow" name="event-color" value="#EAB308" hidden>
+                                <label for="color-yellow" class="color-option" style="background-color: #EAB308;"></label>
+                                
+                                <input type="radio" id="color-lime" name="event-color" value="#84CC16" hidden>
+                                <label for="color-lime" class="color-option" style="background-color: #84CC16;"></label>
+                                
+                                <input type="radio" id="color-green" name="event-color" value="#22C55E" hidden>
+                                <label for="color-green" class="color-option" style="background-color: #22C55E;"></label>
+                                
+                                <input type="radio" id="color-cyan" name="event-color" value="#06B6D4" hidden>
+                                <label for="color-cyan" class="color-option" style="background-color: #06B6D4;"></label>
+                                
+                                <input type="radio" id="color-sky" name="event-color" value="#0EA5E9" hidden>
+                                <label for="color-sky" class="color-option" style="background-color: #0EA5E9;"></label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="theme">
+                            <label for="theme-info">Tema do evento</label>
+                            <div class="theme-grid">
+                                <input type="radio" id="theme-aniversario" name="event-theme" value="aniversario" hidden>
+                                <label for="theme-aniversario" class="theme-option">
+                                    <img src="assests/themes/Image-1.png" alt="Aniversário">
+                                    <span class="theme-label">Aniversário</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-casamento" name="event-theme" value="casamento" hidden>
+                                <label for="theme-casamento" class="theme-option">
+                                    <img src="assests/themes/Image-2.png" alt="Casamento">
+                                    <span class="theme-label">Casamento</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-formatura" name="event-theme" value="formatura" hidden>
+                                <label for="theme-formatura" class="theme-option">
+                                    <img src="assests/themes/Image-3.png" alt="Formatura">
+                                    <span class="theme-label">Formatura</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-corporativo" name="event-theme" value="corporativo" hidden>
+                                <label for="theme-corporativo" class="theme-option">
+                                    <img src="assests/themes/Image-4.png" alt="Corporativo">
+                                    <span class="theme-label">Corporativo</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-cha-bebe" name="event-theme" value="cha-bebe" hidden>
+                                <label for="theme-cha-bebe" class="theme-option">
+                                    <img src="assests/themes/Image-5.png" alt="Chá de Bebê">
+                                    <span class="theme-label">Chá de Bebê</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-cha-panela" name="event-theme" value="cha-panela" hidden>
+                                <label for="theme-cha-panela" class="theme-option">
+                                    <img src="assests/themes/Image-6.png" alt="Chá de Panela">
+                                    <span class="theme-label">Chá de Panela</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-halloween" name="event-theme" value="halloween" hidden>
+                                <label for="theme-halloween" class="theme-option">
+                                    <img src="assests/themes/Image-7.png" alt="Halloween">
+                                    <span class="theme-label">Halloween</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-natal" name="event-theme" value="natal" hidden>
+                                <label for="theme-natal" class="theme-option">
+                                    <img src="assests/themes/Image-8.png" alt="Natal">
+                                    <span class="theme-label">Natal</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-reveillon" name="event-theme" value="reveillon" hidden>
+                                <label for="theme-reveillon" class="theme-option">
+                                    <img src="assests/themes/Image-9.png" alt="Réveillon">
+                                    <span class="theme-label">Réveillon</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-festa-junina" name="event-theme" value="festa-junina" hidden>
+                                <label for="theme-festa-junina" class="theme-option">
+                                    <img src="assests/themes/Image-10.png" alt="Festa Junina">
+                                    <span class="theme-label">Festa Junina</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-pascoa" name="event-theme" value="pascoa" hidden>
+                                <label for="theme-pascoa" class="theme-option">
+                                    <img src="assests/themes/Image-11.png" alt="Páscoa">
+                                    <span class="theme-label">Páscoa</span>
+                                </label>
+                                
+                                <input type="radio" id="theme-outros" name="event-theme" value="outros" hidden>
+                                <label for="theme-outros" class="theme-option">
+                                    <img src="assests/themes/Image.png" alt="Outros">
+                                    <span class="theme-label">Outros</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="style">
+                            <label for="style-info">Estilo</label>
+                            <div class="style-switch">
+                                <input type="checkbox" id="style-toggle" name="style" value="light">
+                                <label for="style-toggle" class="switch-container">
+                                    <div class="switch-track">
+                                        <div class="switch-option left">
+                                            <span>Escuro</span>
+                                        </div>
+                                        <div class="switch-option right">
+                                            <span>Claro</span>
+                                        </div>
+                                        <div class="switch-thumb"></div>
+                                    </div>
+                                </label>
+                            </div>
+                        </fieldset>
+                        
+                        <fieldset class="photo">
+                            <label for="photo-info">Foto de capa</label>
+                            <div class="photo-upload">
+                                <div class="upload-area">
+                                    <input type="file" id="cover-photo" name="cover-photo" accept="image/*">
+                                    <img src="assests/icons/Vector/Vector.svg" alt="Upload" class="upload-icon">
+                                    <p>Clique para enviar uma imagem</p>
+                                    <span>Formatos aceitos: JPG, PNG, GIF</span>
+                                </div>
+                                <div class="photo-preview" style="display: none;">
+                                    <img id="preview-image" src="" alt="Preview da foto">
+                                    <button type="button" class="remove-photo">×</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="contact-info">
+                        <img src="assests/icons/Contact/contact.svg" alt="Icone de contato">
+                        <span>Dados para contato</span>
+                    </div>
+                    
+                    <div class="contact">
+                        <fieldset class="name-info">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" placeholder="Nome Completo">
+                        </fieldset>
+                        
+                        <fieldset class="email-info">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+                        </fieldset>
+                        
+                        <fieldset class="phone-info">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(99) 99999-9999">
+                        </fieldset>
+                    </div>
+
+                    <!-- Seção de Termos e Condições -->
+                    <div class="terms-section">
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="terms-checkbox" name="terms" required>
+                                <span class="checkmark"></span>
+                                <p>
+                                    Li e concordo com os <strong class="terms-text">Termos e Condições</strong> e com a <strong class="terms-text">Política de Privacidade</strong>
+                                </p>
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="marketing-checkbox" name="marketing">
+                                <span class="checkmark"></span>
+                                Aceito receber atualizações e promoções por e-mail
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="sms-checkbox" name="sms">
+                                <span class="checkmark"></span>
+                                Aceito receber atualizações e promoções por SMS
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Botão de envio -->
+                    <div class="submit-section">
+                        <button type="submit" class="submit-btn">
+                            Gerar Convite
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

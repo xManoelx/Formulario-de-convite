@@ -1,0 +1,120 @@
+#app{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside{
+    background-image: url(../assests/ilustration/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-color: var(--shape-body);
+    padding: 2rem;
+
+    & h1{
+        max-width: 31rem;
+
+        font: var(--h1);
+        color: var(--pink);  
+    }
+
+    & p{
+        max-width: 31rem;
+
+        font: var(--body-md);
+        color: var(--text-heading);
+    }
+}
+
+main{
+    background-color: var(--shape-body);
+    overflow: auto;
+    padding: .5rem;
+}
+
+.main-container{
+    max-width: 33rem;
+    margin-right: auto;
+    
+    margin-bottom: 2px;
+    line-height: 10.2;
+
+
+    & h1{
+        font: var(--hd-md);
+        color: var(--text-heading);
+    }
+
+    label{
+        padding: 1rem;
+        
+        font: var(--body-sm);
+        color: var(--text-body);
+    }
+
+    input{
+        color: var(--text-body);
+        background-color: var(--input-stroke);
+        border: 1px solid var(--input-base);
+        
+        height: 3rem;
+        padding-left: 1rem;
+
+        border-radius: 15px;
+    }
+
+    textarea{
+        color: var(--text-body);
+        background-color: var(--input-stroke);
+        border: 1px solid var(--input-base);
+        
+        height: 3rem;
+        padding-top: 2rem;
+        padding-left: 1rem;
+
+        border-radius: 15px;
+    }
+
+    input:focus, select:focus, textarea:focus, input[type="date"]:focus-within{
+        border-color: var(--brand-light);
+    }
+}
+
+input[type="date"]{
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator{
+        opacity: 0;
+    }
+}
+
+.personalize-event{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 3rem;
+
+    color: var(--text-heading);
+    font: var(--hd-sm);
+
+    gap: 1rem;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    
+    margin-top: 2rem;
+
+    color: var(--text-heading);
+    font: var(--hd-sm);
+
+    gap: 1rem; 
+}
+
+.contact{
+    display: block;
+}
